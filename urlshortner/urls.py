@@ -19,7 +19,7 @@ from urlshortner import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('urls', views.url_list),
-    path('urls/gen_short_url', views.gen_short_url),
+    path('', views.url_list),
+    path('gen_short_url', views.gen_short_url),
     path('<str:uniqueId>', views.short_url),
 ]
