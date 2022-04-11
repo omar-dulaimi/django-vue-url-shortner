@@ -1,30 +1,46 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav>
-  <router-view />
+  <q-layout view="hHh LpR fFf">
+    <q-header reveal elevated class="bg-primary text-white">
+      <q-toolbar>
+        <q-toolbar-title>
+          <q-avatar>
+            <img src="https://cdn.quasar.dev/logo-v2/svg/logo-mono-white.svg" />
+          </q-avatar>
+          Url Shortner
+        </q-toolbar-title>
+      </q-toolbar>
+    </q-header>
+
+    <q-page-container>
+      <Shortner />
+    </q-page-container>
+
+    <q-footer reveal elevated class="bg-grey-8 text-white">
+      <q-toolbar>
+        <q-toolbar-title class="flex flex-center text-subtitle1">
+          Made by Omar Dulaimi
+        </q-toolbar-title>
+      </q-toolbar>
+    </q-footer>
+  </q-layout>
 </template>
+;
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
+<script>
+import { ref } from "vue";
+import Shortner from "./components/Shortner.vue";
 
-nav {
-  padding: 30px;
-}
+export default {
+  name: "LayoutDefault",
 
-nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
+  components: {
+    Shortner,
+  },
 
-nav a.router-link-exact-active {
-  color: #42b983;
-}
-</style>
+  setup() {
+    return {
+      leftDrawerOpen: ref(false),
+    };
+  },
+};
+</script>
