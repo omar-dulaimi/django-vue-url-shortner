@@ -10,8 +10,8 @@
 
       <q-tab-panels v-model="tab" animated>
         <q-tab-panel name="one">
-          Generate a short link from any valid url. Links will be
-          deleted after 10 days.
+          Generate a short link from any valid url. Links will be deleted after
+          10 days.
           <q-card-actions align="right">
             <q-btn
               flat
@@ -76,15 +76,15 @@
           name="three"
           class="full-width column wrap justify-center items-center content-center"
         >
-          <img src="/assets/django.png" height="75" />
+          <img src="/static/assets/django.png" height="75" />
           <q-separator dark />
-          <img src="/assets/django-rest-framework.png" height="120" />
+          <img src="/static/assets/django-rest-framework.png" height="120" />
           <q-separator dark />
-          <img src="/assets/sqllite.png" height="100" />
+          <img src="/static/assets/sqllite.png" height="100" />
           <q-separator dark />
-          <img src="/assets/vuejs.png" height="125" />
+          <img src="/static/assets/vuejs.png" height="125" />
           <q-separator dark />
-          <img src="/assets/quasar.png" height="175" />
+          <img src="/static/assets/quasar.png" height="175" />
         </q-tab-panel>
       </q-tab-panels>
     </q-card>
