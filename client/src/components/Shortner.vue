@@ -23,17 +23,7 @@
 <script>
 import { useQuasar } from "quasar";
 import { ref } from "vue";
-
-function isValidHttpUrl(string) {
-  let urlToTest;
-  try {
-    urlToTest = new URL(string);
-  } catch (_) {
-    return false;
-  }
-
-  return urlToTest.protocol === "http:" || urlToTest.protocol === "https:";
-}
+import { isValidHttpUrl } from "../utils";
 
 export default {
   url: "Shortner",
