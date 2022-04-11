@@ -4,7 +4,7 @@
       <q-toolbar class="text-white shadow-2 rounded-borders">
         <q-toolbar-title>
           <q-avatar>
-            <span class="material-icons"> link </span>
+            <q-icon name="ion-link" color="white" size="2.49rem" />
           </q-avatar>
           Url Shortner
         </q-toolbar-title>
