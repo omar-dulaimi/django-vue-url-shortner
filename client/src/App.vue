@@ -4,7 +4,7 @@
       <q-toolbar>
         <q-toolbar-title>
           <q-avatar>
-            <img src="https://cdn.quasar.dev/logo-v2/svg/logo-mono-white.svg" />
+            <span class="material-icons"> link </span>
           </q-avatar>
           Url Shortner
         </q-toolbar-title>
@@ -27,20 +27,12 @@
 ;
 
 <script>
-import { ref } from "vue";
 import Shortner from "./components/Shortner.vue";
 
 export default {
   name: "LayoutDefault",
-
   components: {
     Shortner,
-  },
-
-  setup() {
-    return {
-      leftDrawerOpen: ref(false),
-    };
   },
 };
 </script>
