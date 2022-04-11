@@ -8,7 +8,6 @@
           label="Url *"
           hint="Url to shorten"
           lazy-rules
-          :rules="[(val) => (val && val.length > 0) || 'Please type a url']"
         />
 
         <div class="flex flex-center">
@@ -74,12 +73,16 @@ export default {
                   noDismiss: true,
                   handler: async () => {
                     await navigator.clipboard.writeText(data?.url);
+                    url.value = null;
                     dismiss();
                   },
                 },
                 {
                   label: "Dismiss",
                   color: "white",
+                  handler: () => {
+                    url.value = null;
+                  },
                 },
               ],
             });
