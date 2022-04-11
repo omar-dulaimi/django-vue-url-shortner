@@ -103,12 +103,15 @@ export default {
 };
 </script>
 
-<style scoped>
-.about-wrapper {
-  height: calc(100vh - 100px) !important;
-}
-.about-card {
-  width: 100%;
-  max-width: 500px;
-}
+<style lang="sass" scoped>
+.about-wrapper
+  height: calc(100vh - 100px) !important
+
+@media (max-width: $breakpoint-xs-max)
+  .about-wrapper
+    margin-bottom: 150px
+
+.about-card
+  width: 100%
+  max-width: 500px
 </style>
