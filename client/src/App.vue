@@ -1,18 +1,22 @@
 <template>
   <q-layout view="hHh LpR fFf">
     <q-header reveal elevated class="bg-primary text-white">
-      <q-toolbar>
+      <q-toolbar class="text-white shadow-2 rounded-borders">
         <q-toolbar-title>
           <q-avatar>
             <span class="material-icons"> link </span>
           </q-avatar>
           Url Shortner
         </q-toolbar-title>
+        <q-tabs shrink stretch>
+          <q-route-tab name="tab1" label="Home" to="/" exact />
+          <q-route-tab name="tab2" label="About" to="/about" exact />
+        </q-tabs>
       </q-toolbar>
     </q-header>
 
     <q-page-container>
-      <Shortner />
+      <router-view></router-view>
     </q-page-container>
 
     <q-footer reveal elevated class="bg-grey-8 text-white">
