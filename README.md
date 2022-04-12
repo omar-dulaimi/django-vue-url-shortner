@@ -54,7 +54,10 @@ source .venv/bin/activate
 
 - Build frontend: 
 ```bash
- cd client && npm run build
+ cd client && npm i
+```
+```bash
+ npm run build
 ```
 
 - Finally, website is ready at http://127.0.0.1:8000
