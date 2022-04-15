@@ -42,7 +42,7 @@ export default {
             message: "You need to enter a valid url",
           });
         } else {
-          const res = await fetch("api/gen_short_url", {
+          const res = await fetch("api/urls/gen_short_url", {
             method: "POST",
             headers: {
               "Content-type": "application/json",
